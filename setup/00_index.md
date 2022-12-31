@@ -1,4 +1,4 @@
-# Setup and installation
+# Overview
 
 To study programming this semester we will need three tools.
 

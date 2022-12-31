@@ -2,8 +2,63 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+root: index
+parts:
+  - caption: The course and its tools
+    chapters:
+    - file: setup/00_index
+      sections:
+      - file: setup/01_syllabus
+      - file: setup/10_installation
+      - file: setup/20_communication
+      - file: setup/30_assessment
+  - caption: Programming
+    chapters:
+    - file: programming/index
+
+    - file: programming/concepts/00_index
+      sections:
+      - file: programming/concepts/01_number-systems
+      - file: notebooks/programming/01_number-systems
+      - file: programming/concepts/02_text-as-binary
+      - file: notebooks/programming/02_text-as-binary
+      - file: programming/concepts/03_images-as-binary
+      - file: notebooks/programming/03_images-as-binary
+      - file: programming/concepts/10_sequence
+      - file: notebooks/programming/10_sequence
+      - file: programming/concepts/11_selection
+      - file: notebooks/programming/11_selection
+      - file: programming/concepts/12_iteration
+      - file: notebooks/programming/12_iteration
+      - file: programming/concepts/20_mods-funcs
+      - file: programming/concepts/30_data-types
+      - file: programming/concepts/40_operators
+
+    - file: programming/datastructures/00_index
+      sections:
+      - file: programming/datastructures/10_files
+      - file: programming/datastructures/20_strings
+      - file: programming/datastructures/30_lists
+      - file: programming/datastructures/40_arrays
+
+    - file: programming/practice/00_index
+      sections:
+      - file: programming/practice/10_framework
+      - file: programming/practice/20_investigate
+      - file: programming/practice/30_design
+      - file: programming/practice/40_develop
+      - file: programming/practice/50_evaluate
+
+  - caption: Networks
+    chapters:
+    - file: networks/00_index
+      sections:
+      - file: networks/10_models
+      - file: networks/20_components
+      - file: networks/30_performance
+
+# chapters:
+# - file: markdown
+# - file: notebooks
+# - file: markdown-notebooks
+# - file: programming/index

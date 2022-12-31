@@ -29,6 +29,67 @@ Here is a "note" directive:
 Here is a note
 ```
 
+```{warning}
+Here is a warning
+```
+
+```{admonition} Here's your admonition
+Here's the admonition content
+```
+
+`````{admonition} This admonition was styled...
+:class: tip
+With a tip class!
+`````
+
+::::{important}
+:::{note}
+This text is **standard** _Markdown_
+:::
+::::
+
+Term 1
+: Definition
+
+Term 2
+: Definition
+
+Term *with Markdown*
+: Definition [with reference](content/definition-lists)
+
+  A second paragraph
+: A second definition
+
+Term 2
+  ~ Definition 2a
+  ~ Definition 2b
+
+Term 3
+:     A code block
+: > A quote
+: A final definition, that can even include images:
+
+  <img src="./images/big-wave-square.png" alt="wave" width="200px">
+  
+> Here is a cool quotation.
+>
+> From me, Jo the Jovyan
+
+```{epigraph}
+Here is a cool quotation.
+
+From me, Jo the Jovyan
+```
+
+```{glossary}
+Term one
+  An indented explanation of term 1
+
+A second term
+  An indented explanation of term2
+```
+
+
 It will be rendered in a special box when you build your book.
 
 Here is an inline directive to refer to a document: {doc}`markdown-notebooks`.
