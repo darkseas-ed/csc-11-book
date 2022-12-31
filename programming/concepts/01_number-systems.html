@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Iteration &#8212; Computer Science 11 ATAR</title>
+    <title>Characters as Binary &#8212; Computer Science 11 ATAR</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Iteration" href="../../notebooks/programming/12_iteration.html" />
-    <link rel="prev" title="Selection" href="../../notebooks/programming/11_selection.html" />
+    <link rel="next" title="Number Systems" href="../../notebooks/programming/01_number-systems.html" />
+    <link rel="prev" title="Programming skills and concepts" href="00_index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -173,8 +173,8 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul class="current">
-   <li class="toctree-l2">
-    <a class="reference internal" href="01_number-systems.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Characters as Binary
     </a>
    </li>
@@ -209,27 +209,7 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../notebooks/programming/10_sequence.html">
-     Sequence
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="11_selection.html">
-     Selection
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../notebooks/programming/11_selection.html">
-     Selection
-    </a>
-   </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Iteration
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../notebooks/programming/12_iteration.html">
+    <a class="reference internal" href="12_iteration.html">
      Iteration
     </a>
    </li>
@@ -443,7 +423,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://darkseas-ed.github.io/csc-11-book//issues/new?title=Issue%20on%20page%20%2Fprogramming/concepts/12_iteration.html&body=Your%20issue%20content%20here."
+        <a href="https://darkseas-ed.github.io/csc-11-book//issues/new?title=Issue%20on%20page%20%2Fprogramming/concepts/01_number-systems.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -471,7 +451,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/programming/concepts/12_iteration.md"
+        <a href="../../_sources/programming/concepts/01_number-systems.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -531,18 +511,88 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#repetition">
-   Repetition
+  <a class="reference internal nav-link" href="#review">
+   Review
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#loops">
-   Loops
+  <a class="reference internal nav-link" href="#learning-objectives">
+   Learning objectives
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#recursion">
-   Recursion
+  <a class="reference internal nav-link" href="#success-criteria">
+   Success criteria
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#number-systems">
+   Number systems
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activity-1-distinguish-among-numbers">
+     Activity 1 - Distinguish among numbers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#text">
+   Text
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ascii">
+   ASCII
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activity-2-complete-the-ascii-table">
+     Activity 2 - Complete the ASCII table
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activity-3-manual-translation-of-binary-ascii">
+     Activity 3 - Manual translation of binary-ascii
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activity-4-design-an-ascii-converter">
+     Activity 4 - Design an ASCII converter
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#unicode">
+   Unicode
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activity-5-use-library-functions-for-conversion">
+     Activity 5 - Use library functions for conversion
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#images">
+   Images
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recap">
+   Recap
   </a>
  </li>
 </ul>
@@ -554,7 +604,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Iteration</h1>
+                <h1>Characters as Binary</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -565,18 +615,88 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#repetition">
-   Repetition
+  <a class="reference internal nav-link" href="#review">
+   Review
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#loops">
-   Loops
+  <a class="reference internal nav-link" href="#learning-objectives">
+   Learning objectives
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#recursion">
-   Recursion
+  <a class="reference internal nav-link" href="#success-criteria">
+   Success criteria
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#number-systems">
+   Number systems
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activity-1-distinguish-among-numbers">
+     Activity 1 - Distinguish among numbers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#text">
+   Text
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ascii">
+   ASCII
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activity-2-complete-the-ascii-table">
+     Activity 2 - Complete the ASCII table
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activity-3-manual-translation-of-binary-ascii">
+     Activity 3 - Manual translation of binary-ascii
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activity-4-design-an-ascii-converter">
+     Activity 4 - Design an ASCII converter
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#unicode">
+   Unicode
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activity-5-use-library-functions-for-conversion">
+     Activity 5 - Use library functions for conversion
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#images">
+   Images
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recap">
+   Recap
   </a>
  </li>
 </ul>
@@ -589,16 +709,64 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="iteration">
-<h1>Iteration<a class="headerlink" href="#iteration" title="Permalink to this headline">#</a></h1>
-<section id="repetition">
-<h2>Repetition<a class="headerlink" href="#repetition" title="Permalink to this headline">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="characters-as-binary">
+<h1>Characters as Binary<a class="headerlink" href="#characters-as-binary" title="Permalink to this headline">#</a></h1>
+<section id="review">
+<h2>Review<a class="headerlink" href="#review" title="Permalink to this headline">#</a></h2>
+<p>What are characters?</p>
+<p>What is binary?</p>
+<p>What is the importance of this concept?</p>
 </section>
-<section id="loops">
-<h2>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">#</a></h2>
+<section id="learning-objectives">
+<h2>Learning objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">#</a></h2>
+<p>Characters, words and messages are represented as binary
+numbers in the storage and transmission of data.</p>
 </section>
-<section id="recursion">
-<h2>Recursion<a class="headerlink" href="#recursion" title="Permalink to this headline">#</a></h2>
+<section id="success-criteria">
+<h2>Success criteria<a class="headerlink" href="#success-criteria" title="Permalink to this headline">#</a></h2>
+<ol class="simple">
+<li><p>Identify characters and binary, decimal and hexadecimal numbers</p></li>
+<li><p>Complete the missing fields of the ASCII table</p></li>
+</ol>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="number-systems">
+<h2>Number systems<a class="headerlink" href="#number-systems" title="Permalink to this headline">#</a></h2>
+<section id="activity-1-distinguish-among-numbers">
+<h3>Activity 1 - Distinguish among numbers<a class="headerlink" href="#activity-1-distinguish-among-numbers" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="id1">
+<h3><a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="text">
+<h2>Text<a class="headerlink" href="#text" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="ascii">
+<h2>ASCII<a class="headerlink" href="#ascii" title="Permalink to this headline">#</a></h2>
+<section id="activity-2-complete-the-ascii-table">
+<h3>Activity 2 - Complete the ASCII table<a class="headerlink" href="#activity-2-complete-the-ascii-table" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="activity-3-manual-translation-of-binary-ascii">
+<h3>Activity 3 - Manual translation of binary-ascii<a class="headerlink" href="#activity-3-manual-translation-of-binary-ascii" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="activity-4-design-an-ascii-converter">
+<h3>Activity 4 - Design an ASCII converter<a class="headerlink" href="#activity-4-design-an-ascii-converter" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="unicode">
+<h2>Unicode<a class="headerlink" href="#unicode" title="Permalink to this headline">#</a></h2>
+<section id="activity-5-use-library-functions-for-conversion">
+<h3>Activity 5 - Use library functions for conversion<a class="headerlink" href="#activity-5-use-library-functions-for-conversion" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="images">
+<h2>Images<a class="headerlink" href="#images" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="recap">
+<h2>Recap<a class="headerlink" href="#recap" title="Permalink to this headline">#</a></h2>
 </section>
 </section>
 
@@ -629,17 +797,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../../notebooks/programming/11_selection.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="00_index.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Selection</p>
+            <p class="prev-next-title">Programming skills and concepts</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../../notebooks/programming/12_iteration.html" title="next page">
+    <a class='right-next' id="next-link" href="../../notebooks/programming/01_number-systems.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Iteration</p>
+        <p class="prev-next-title">Number Systems</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
