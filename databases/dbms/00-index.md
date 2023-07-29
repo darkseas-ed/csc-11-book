@@ -18,15 +18,18 @@ instead of unstructured data-lakes.
 
 [](content:databases:data-information)
 
-## Flatfile vs Relational Databases
+## Flat File vs Relational Databases
 
 Flat file databases are familiar to us as tables of data in spreadsheets or data
 summaries. Relational databases seek to bring guarantees of data integrity to
 these collections of information.
 
+[](content:databases:flat)
+
+
 ## RDBMS
 
-Relational database management systems assist and autoomate the maintenance and
+Relational database management systems assist and automate the maintenance and
 interrogation of these structured data sources.
 
 
