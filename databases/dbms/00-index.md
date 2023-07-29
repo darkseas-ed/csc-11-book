@@ -35,8 +35,6 @@ interrogation of these structured data sources.
 
 
 
-
-
 ## Sources
 
 https://www.geeksforgeeks.org/dbms/
