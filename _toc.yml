@@ -59,8 +59,9 @@ parts:
 
   - caption: Data management
     chapters:
-    - file: databases/dbms/00-index
+    - file: databases/data-management
       sections:
+      - file: databases/dbms/00-index
       - file: databases/dbms/01-data-information.md
       - file: databases/dbms/02-flat-relational.md
       - file: databases/dbms/03-rdbms.md
