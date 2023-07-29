@@ -57,6 +57,50 @@ parts:
       - file: networks/20_components
       - file: networks/30_performance
 
+  - caption: Data management
+    chapters:
+    - file: databases/dbms/00-index
+      sections:
+      - file: databases/dbms/01-data-information.md
+      - file: databases/dbms/02-flat-relational.md
+      - file: databases/dbms/03-rdbms.md
+    - file: databases/concepts/00-index.md
+      sections:
+      - file: databases/concepts/10-organisation.md
+      - file: databases/concepts/20-primary-foreign-keys.md
+      - file: databases/concepts/30-composite-keys.md
+      - file: databases/concepts/40-data-anomalies.md
+    - file: databases/data-modelling/00-index.md
+      sections:
+      - file: databases/data-modelling/10-data-dictionary.md
+      - file: databases/data-modelling/20-entity-relationship-diagrams.md
+    - file: databases/data-integrity/00-index.md
+      sections:
+      - file: databases/data-integrity/10-factors.md
+      - file: databases/data-integrity/20-validity-vs-accuracy.md
+    - file: databases/normalisation/00-index.md
+      sections:
+      - file: databases/normalisation/10-purpose-3NF
+      - file: databases/normalisation/20-process-3NF
+      - file: databases/normalisation/30-normalise-1NF
+      - file: databases/normalisation/40-normalise-2NF
+      - file: databases/normalisation/50-normalise-3NF
+    - file: databases/manipulation/00-index.md
+      sections:
+      - file: databases/manipulation/10-select
+      - file: databases/manipulation/20-insert
+      - file: databases/manipulation/30-delete
+      - file: databases/manipulation/40-update
+      - file: databases/manipulation/50-order-by
+      - file: databases/manipulation/60-inner-join
+      - file: databases/manipulation/70-aggregate
+    - file: databases/development/00-index.md
+      sections:
+      - file: databases/development/10-ethical
+      - file: databases/development/20-security
+      - file: databases/development/30-legal
+
+
 # chapters:
 # - file: markdown
 # - file: notebooks

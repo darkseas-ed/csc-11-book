@@ -21,7 +21,10 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://darkseas-ed.github.io/csc-11-book/
+  # url: https://darkseas-ed.github.io/csc-11-book
+  # url: https://github.com/csc-11-book
+  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
+  # repository_provider: https://darkseas-ed.github.io
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
@@ -29,4 +32,3 @@ repository:
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   use_issues_button: true
-  use_repository_button: true
