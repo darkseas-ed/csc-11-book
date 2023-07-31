@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Relational Database Management Systems &#8212; Computer Science 11 ATAR</title>
+    <title>Data Management &#8212; Computer Science 11 ATAR</title>
   
   
   
@@ -59,10 +59,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'databases/03-rdbms';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'databases/data-management';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Flat file vs Relational" href="02-flat-relational.html" />
+    <link rel="next" title="Database Management Systems" href="dbms/00-index.html" />
+    <link rel="prev" title="Network Performance" href="../networks/30_performance.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -211,10 +212,52 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data management</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="00-index.html">Index</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="01-data-information.html">Data and information</a></li>
-<li class="toctree-l2"><a class="reference internal" href="02-flat-relational.html">Flat file vs Relational</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Relational Database Management Systems</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Data Management</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="dbms/00-index.html">Database Management Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dbms/01-data-information.html">Data and information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dbms/02-flat-relational.html">Flat File vs Relational Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dbms/03-rdbms.html">Relational Database Management Systems</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="concepts/00-index.html">Core database concepts</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="concepts/10-organisation.html">Organisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concepts/20-primary-foreign-keys.html">Primary and foreign keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concepts/30-composite-keys.html">Composite Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concepts/40-data-anomalies.html">Data anomalies</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="data-modelling/00-index.html">Data modelling</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="data-modelling/10-data-dictionary.html">Data dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-modelling/20-entity-relationship-diagrams.html">Entity Relationship Diagrams</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="data-integrity/00-index.html">Data Integrity</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="data-integrity/10-factors.html">Factors influencing integrity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-integrity/20-validity-vs-accuracy.html">Validity vs Accuracy</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="normalisation/00-index.html">Normalisation</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="normalisation/10-purpose-3NF.html">Purpose of Normalisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="normalisation/20-process-3NF.html">Process of normalisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="normalisation/30-normalise-1NF.html">Normalise to First Normal Form</a></li>
+<li class="toctree-l2"><a class="reference internal" href="normalisation/40-normalise-2NF.html">Normalise to Second Normal Form</a></li>
+<li class="toctree-l2"><a class="reference internal" href="normalisation/50-normalise-3NF.html">Normalise to Third Noraml Form</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="manipulation/00-index.html">Database creation and manipulation</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="manipulation/10-select.html">SELECT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manipulation/20-insert.html">INSERT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manipulation/30-delete.html">DELETE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manipulation/40-update.html">UPDATE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manipulation/50-order-by.html">ORDER BY</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manipulation/60-inner-join.html">INNER JOIN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manipulation/70-aggregate.html">Aggregate Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="development/00-index.html">Development Issues</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="development/10-ethical.html">Ethical Issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/20-security.html">Security Issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/30-legal.html">Ethical Issues</a></li>
 </ul>
 </li>
 </ul>
@@ -260,7 +303,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="article-header-buttons">
 
 
-<a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fdatabases/03-rdbms.html&body=Your%20issue%20content%20here." target="_blank"
+<a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fdatabases/data-management.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button"
    title="Open an issue"
    data-bs-placement="bottom" data-bs-toggle="tooltip"
@@ -286,7 +329,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/databases/03-rdbms.md" target="_blank"
+      <li><a href="../_sources/databases/data-management.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -366,7 +409,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Relational Database Management Systems</h1>
+    <h1>Data Management</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -380,8 +423,17 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="relational-database-management-systems">
-<h1>Relational Database Management Systems<a class="headerlink" href="#relational-database-management-systems" title="Permalink to this headline">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="data-management">
+<h1>Data Management<a class="headerlink" href="#data-management" title="Permalink to this headline">#</a></h1>
+<p>We will look at how and why we organise information, and how databases can
+assist us to do this.</p>
+<p>We will look at how databases are constructed from tables of data,
+which are, in turn, constructed from attributes and records.</p>
+<p>We will use SQL to construct, query and modify tables and entire databases.</p>
+<p>Lastly, we will look at our ethical legal and security responsibilities at
+developers of data management solutions.</p>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -416,13 +468,22 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="02-flat-relational.html"
+       href="../networks/30_performance.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Flat file vs Relational</p>
+        <p class="prev-next-title">Network Performance</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="dbms/00-index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Database Management Systems</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
